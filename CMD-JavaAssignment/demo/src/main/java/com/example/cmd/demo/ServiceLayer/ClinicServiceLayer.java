@@ -15,6 +15,11 @@ public class ClinicServiceLayer implements ClinicInterface {
     @Autowired
     private ClinicRepository clinicRepository;
 
+    public ClinicServiceLayer(ClinicRepository clinicRepository)
+    {
+        this.clinicRepository=clinicRepository;
+    }
+
     @Override
     public void createclinic(Clinics clinics) {
 
