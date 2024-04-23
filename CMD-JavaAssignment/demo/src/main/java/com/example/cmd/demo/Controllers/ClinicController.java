@@ -66,4 +66,11 @@ public class ClinicController {
 
         return (ResponseEntity.badRequest().body("Clinic with this clinic id already exists."));
     }
+
+    // @PostMapping("/checkIfExists")
+    // public ResponseEntity<?> checkIfClinicExists(@RequestBody Map<String,String> request)
+    // {
+
+    // }
+
 }
